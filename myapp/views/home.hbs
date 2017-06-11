@@ -1,5 +1,36 @@
-<form action="/btn">
-  <button>Send</button>
+<div id="select-parameters" style="position: absolute; top:20px; left:20px; width: 450px; height: 100px; color:#000045"><font size="2">
+  <div id="shed" style="position: absolute; left:20px; width: 100px; height: 100px">
+    <h3>Shed</h3>
+      <select>
+        <option value="shed1">Shed 1</option>
+        <option value="shed2">Shed 2</option>
+      </select>
+  </div>
+  <div id="room" style="position: absolute; left:120px; width: 100px; height: 100px;">
+    <h3>Room</h3>
+    <select>
+      <option value="room1">Room 1</option>
+      <option value="room2">Room 2</option>
+    </select>
+  </div>
+  <div id="sensor" style="position: absolute; left:220px; width: 100px; height: 100px;">
+    <h3>Sensor</h3>
+    <select>
+      <option value="sensor1">Sensor 1</option>
+      <option value="sensor2">Sensor 2</option>
+      <option value="sensor3">Sensor 3</option>
+    </select>
+  </div>
+  <div id="data-type" style="position: absolute; left:320px; width: 100px; height: 100px;">
+    <h3>Data Type</h3>
+    <select>
+      <option value="temperature">Temperature</option>
+      <option value="pressure">Pressure</option>
+    </select>
+  </div>
+</font></div>
+<form action="/btn" style="position: absolute; top:150px; left:40px; width: 100px; height: 100px;">
+  <button>Submit</button>
 </form>
 <script>
   $("form").submit(function(e) {
