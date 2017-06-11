@@ -1,0 +1,16 @@
+<form action="/btn">
+  <button>Send</button>
+</form>
+<script>
+  $("form").submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+      url: "/btn",
+      data: {...},
+	  type: "GET", // if you want to send data via the "data" property change this to "POST". This can be omitted otherwise
+      success: function(responseData) {
+      },
+      error: console.error
+    });
+  });
+</script>
